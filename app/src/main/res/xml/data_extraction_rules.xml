@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Android 12+ (API 31+) data extraction rules.
+    Excludes sensitive DataStore and Room database from cloud and device-transfer backups.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude DataStore preferences (contains hashed PIN, session state) -->
+        <exclude domain="file" path="datastore/" />
+        <!-- Exclude Room database -->
+        <exclude domain="database" path="sleep_controller_db" />
+    </cloud-backup>
+    <device-transfer>
+        <!-- Exclude sensitive data from device-to-device transfer too -->
+        <exclude domain="file" path="datastore/" />
+        <exclude domain="database" path="sleep_controller_db" />
+    </device-transfer>
+</data-extraction-rules>

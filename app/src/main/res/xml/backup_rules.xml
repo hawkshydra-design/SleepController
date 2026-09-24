@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Legacy backup rules (pre-Android 12, API < 31).
+    Excludes sensitive DataStore and Room database from auto-backup.
+-->
+<full-backup-content>
+    <exclude domain="file" path="datastore/" />
+    <exclude domain="database" path="sleep_controller_db" />
+</full-backup-content>

@@ -1,0 +1,28 @@
+# Built outputs
+build/
+app/build/
+
+# Gradle
+.gradle/
+
+# IDE
+.idea/
+*.iml
+.kotlin/
+
+# Local config (SDK path)
+local.properties
+
+# Signing keys
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Agent
+.agent/

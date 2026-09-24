@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sleep Controller</string>
+    <string name="accessibility_service_description">Sleep Controller uses this service to detect when blocked apps are opened during sleep time and show the blocker overlay. The Phone/Call app is never blocked.</string>
+</resources>
